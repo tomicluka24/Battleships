@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{bdcefbf4-d267-4c1a-a02d-bb78a5b0bda8}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Drawing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ListOperations.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)NetworkCommands.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UserFunctions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UserMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Drawing.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ListOperations.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)NetworkCommands.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UserFunctions.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)UserMenu.cpp" />
+  </ItemGroup>
+</Project>
